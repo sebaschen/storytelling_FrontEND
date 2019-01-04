@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      
+    var img = new Image();
+    var div = document.getElementById('x');
+     
+     
+    img.onload = function() {
+     
+      div.innerHTML += '<img src="'+img.src+'" />'; 
+     
+    };
+     
+     
+    img.src = 'image.jpg';
+
+    </script>
+  </head>
+  <body>
+    <div id="x">
+      
+    </div>
+    
+  </body>
+</html>

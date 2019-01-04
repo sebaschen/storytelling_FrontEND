@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ImageEdit</title>
+	<link rel="stylesheet" type="text/css" href="css/ImageEdit.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://cdn.bootcss.com/camanjs/4.1.2/caman.full.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+	<body>
+		<h1>NTU AIROBO Photo Editor</h1>
+		<div class="editor">
+			<div class="tools">
+				<button id="record">Record</button>
+				<button id="save">Save</button>
+				<button id="reset">Reset</button>
+				<input type="file" id="load"/>		
+				<p>
+			       <label for="brightness">Brightness</label>
+			       <input id ="brightness" name="brightness" type="range" min=-80 max=80 value=0>	
+				</p>
+
+				<p>
+			       <label for="vibrance">Vibrance</label>
+			       <input id ="vibrance" name="vibrance" type="range" min=-100 max=100 value=0>	
+				</p> 
+
+				<p>
+					<label for="saturation">Saturation</label>
+			       	<input id ="saturation" name="saturation" type="range" min=-100 max=100 value=0>	
+				</p>
+
+				<p>
+					<label for="sepia">sepia</label>
+			       	<input id ="sepia" name="sepia" type="range" min=0 max=100 value=0>	
+				</p>
+
+				<p>
+  					<label for="clip">Clip</label>
+  					<input id="clip" name="clip" type="range" min=0 max=100 value=0>
+  				</p>
+  			<div class="filters">	
+				<button id="vintage" class="filter">Vintage</button>
+				<button id="lomo" class="filter">Lomo</button>
+				<button id="clarity" class="filter">Clarity</button>
+				<button id="orangePeel" class="filter">OrangePeel</button>
+				<button id="nostalgia" class="filter">Nostalgia</button>
+        		<button id="sunrise" class="filter">Sun Rise</button>
+        		<button id="love" class="filter">Love</button>
+        		<button id="hazyDays" class="filter">Hazy</button>
+
+				<!-- <h4>Add a message over your image:</h4>
+				<input type="text" id="message" placeholder="Type a message">
+				<button id="submit">ADD</button> -->
+			</div>
+				
+			</div>
+			<img id="image" class="img" src="image/ntu.svg">
+		</div>
+	</body>
+</html>
